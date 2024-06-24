@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Criar Jogo</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+  <section class="container">
+    <img src="/img/logo.png" />
+    <h1>Cadastrar Novo Jogo</h1>
+    <form action="/store" method="POST">
+      <label for="name">Nome:</label>
+      <input type="text" name="name" id="name" required>
+      <label for="made_by">Fabricante:</label>
+      <input type="made_by" name="made_by" id="made_by" required>
+      <label for="gender">Gênero:</label>
+      <input type="gender" name="gender" id="gender" required>
+      <button type="submit">Salvar</button>
+    </form>
+    <a href="/" class="button">Voltar</a>
+  </section>
+  <script src="/js/main.js"></script>
+</body>
+</html>

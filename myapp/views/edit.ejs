@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Usuário</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+  <section class="container">
+    <img src="/img/logo.png" />
+      <h1>Editar Jogo</h1>
+  <form action="/update/<%= game.id %>" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" value="<%= game.name %>" required>
+    <label for="made_by">Fabricante:</label>
+    <input type="made_by" name="made_by" id="made_by" value="<%= game.made_by %>" required>
+    <label for="gender">Gênero:</label>
+    <input type="gender" name="gender" id="gender" value="<%= game.gender %>" required>
+   
+    <button type="submit">Atualizar</button>
+  </form>
+  <a href="/" class="button">Voltar</a>
+  </section>
+</body>
+</html>

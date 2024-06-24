@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detalhes do Jogo</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+  <section class="container">
+    <img src="/img/logo.png" />
+      <h1>Detalhes do Jogo</h1>
+      
+      <table>
+        <tr>
+          <td>
+            Nome: <%= game.name %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fabricante: <%= game.made_by %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Gênero: <%= game.gender %>
+          </td>
+        </tr>
+
+      </table>
+        <div class="button-container">
+          <a href="/edit/<%= game.id %>" class="button" id="edit">Editar</a>
+          <form action="/delete/<%= game.id %>" method="POST" style="display:inline;">
+          <button type="submit" class="danger">X</button>
+          </form>
+          </div>
+          <a href="/" class="button">Voltar</a>
+        
+      </section>
+    </body>
+</html>

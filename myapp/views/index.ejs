@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ninja's Games</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+  <section class="container">
+    <img src="/img/logo.png" />
+    <h1>Lista de Jogos</h1>
+    
+    <table>
+      <% games.forEach(game => { %>
+        <tr>
+          <td>
+            <a href="/show/<%= game.id %>"><%= game.name %></a>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+    <a href="/create" class="button">Novo</a>
+  </section>
+</body>
+</html>

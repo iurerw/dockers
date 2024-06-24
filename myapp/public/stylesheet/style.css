@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(5, 16, 117);
+  --primary-color-darker: rgb(109, 109, 109);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button, a.button {
+  margin: 50px;
+
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button, a.button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px auto 10px auto;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+form button:hover, a.button:hover {
+  background: var(--primary-color-darker);
+}
+
+img {
+  max-width: 300px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: initial;
+  text-shadow: rgb(10, 9, 10);
+  text-shadow: 20px;
+}
+
+tr{
+  display: grid;
+  grid-template-rows: auto;
+  margin-bottom: 20px;
+}
+
+td {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: ridge;
+  border-radius: 15px;
+  display: grid;
+  row-gap: 20px;
+  max-width: 500px;
+}
+
+a:link,a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a.button {
+  padding: 6px 6px;
+ color: white;
+}
+
+.button-container{
+  display: flex;
+  column-gap: 20px;
+}
+table{
+  display: grid;
+  justify-content: center;
+}
+
+.danger:hover{
+  background-color: red;
+}
+#edit:hover{
+  background-color: green;
+}
+
+form input {
+  border-radius: 20px;
+  border: ridge;
+  border-top: none;
+  border-left: none;
+}
+
