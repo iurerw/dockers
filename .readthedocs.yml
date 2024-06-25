@@ -1,10 +1,11 @@
 version: 2
 
-formats:
-  - htmlzip
-
-python:
-  version: 3.8
-
+# Set the version of Python and other tools you might need
 build:
-  image: latest
+  os: ubuntu-22.04
+  tools:
+    nodejs: "20"
+    docker: "25.0.3"
+
+mkdocs:
+  configuration: mkdocs.yml
