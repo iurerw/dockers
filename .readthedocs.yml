@@ -1,10 +1,10 @@
 version: 2
 
 formats:
-  - markdown
+  - html
 
 python:
-  version: 3.8 # Versão do Python para builds, mesmo que você não esteja usando Python
+  version: "3.8"
 
 build:
   image: latest
