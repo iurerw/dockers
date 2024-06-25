@@ -1,0 +1,23 @@
+site_name: iure-rtd-tutorial
+site_description: Breve tutorial sobre aplicação crud
+
+nav:
+  - Home: index.md
+  - Guia de Uso: guia.md
+  - Documentação:
+      - Sobre: sobre.md
+      - Configuração: configuracao.md
+
+theme:
+  name: material
+  palette:
+    primary: "blue"
+    accent: "teal"
+
+markdown_extensions:
+  - admonition
+  - codehilite
+
+plugins:
+  - search
+  - mkdocs-minify-plugin
