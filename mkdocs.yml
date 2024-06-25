@@ -16,4 +16,3 @@ markdown_extensions:
 
 plugins:
   - search
-  - mkdocs-minify-plugin
