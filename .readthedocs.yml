@@ -1,10 +1,10 @@
 version: 2
 
 formats:
-  - html
+  - htmlzip
 
 python:
-  version: "3.8"
+  version: 3.8
 
 build:
   image: latest
