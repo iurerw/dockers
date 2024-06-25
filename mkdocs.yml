@@ -3,13 +3,9 @@ site_description: Breve tutorial sobre aplicação crud
 
 nav:
   - Home: index.md
-  - Guia de Uso: guia.md
-  - Documentação:
-      - Sobre: sobre.md
-      - Configuração: configuracao.md
 
 theme:
-  name: material
+  name: mkdocs
   palette:
     primary: "blue"
     accent: "teal"
