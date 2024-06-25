@@ -1,0 +1,10 @@
+version: 2
+
+formats:
+  - markdown
+
+python:
+  version: 3.8 # Versão do Python para builds, mesmo que você não esteja usando Python
+
+build:
+  image: latest
